@@ -11,5 +11,6 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
   ],
+  type: "module",
   site: 'https://boostedd2.github.io',
 });
