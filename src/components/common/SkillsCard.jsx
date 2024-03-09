@@ -13,7 +13,7 @@ import SkillItem from "./SkillItem";
 export default function SkillsCard() {
   return (
     <div className="h-screen">
-    <Card className="xs:w-[100%] mt-[500px] sm:p-0 md:p-5">
+    <Card className="xs:w-[100%] sm:p-0 md:p-5">
       <CardHeader>
         <CardTitle className="text-3xl">Skills</CardTitle>
       </CardHeader>
