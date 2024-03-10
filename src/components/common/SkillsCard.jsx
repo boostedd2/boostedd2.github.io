@@ -13,15 +13,15 @@ import SkillItem from "./SkillItem";
 export default function SkillsCard() {
   return (
     <div className="">
-      <Card className="xs:w-[100%] mt-[100px] mb-[50px] sm:p-0 md:p-5">
+      <Card className="xs:w-[100%] mt-[20px] mb-[50px] sm:p-0 md:p-5">
         <CardHeader>
           <CardTitle className="text-3xl text-teal-400">Dev Toolbox</CardTitle>
         </CardHeader>
         <CardContent>
-          <div>
+          <div className="mt-2">
             <h3 className="text-2xl font-semibold">Backend</h3>
 
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mt-5">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mt-[30px]">
               <SkillItem
                 image={"/images/Ansible-Community-Mark-Black.svg"}
                 title={"Ansible"}
@@ -65,10 +65,10 @@ export default function SkillsCard() {
             </div>
           </div>
 
-          <div className="mt-10">
+          <div className="mt-20">
             <h3 className="text-2xl font-semibold">Frontend</h3>
 
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mt-5">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mt-[30px]">
               <SkillItem
                 image={"/images/HTML5_logo_and_wordmark.svg"}
                 title={"HTML"}

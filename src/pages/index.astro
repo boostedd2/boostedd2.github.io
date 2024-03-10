@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import PageLayout from "../layouts/PageLayout.astro";
 import BioCard from "../components/common/BioCard";
+import NavBlocks from "../components/common/NavBlocks"
 import SkillsCard from "../components/common/SkillsCard";
 import "@/styles/globals.css";
 import Navigation from "@/components/site/Navigation";
@@ -22,7 +23,6 @@ import HeroText from "../components/site/HomeHeroText";
 
 </style>
 
-<Navigation client:load />
 
 <Layout title="Portfolio: Luke Arsenault">
   <main class="page-container">
@@ -32,6 +32,9 @@ import HeroText from "../components/site/HomeHeroText";
       </div>
       <div class="section">
         <BioCard />
+      </div>
+      <div class="section">
+        <NavBlocks />
       </div>
       <div class="section">
         <SkillsCard />

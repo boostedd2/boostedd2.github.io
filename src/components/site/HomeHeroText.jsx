@@ -20,6 +20,15 @@ export default function HeroText() {
     visible: { opacity: 1 },
   };
 
+  const handleArrowClick = () => {
+    const bioContentWrapper = document.getElementById('bio-content-wrapper');
+    if (bioContentWrapper) {
+      const yOffset = -40;
+      const y = bioContentWrapper.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="flex flex-col justify-center items-center h-screen relative top-[-80px] sm:top-[-50px]">
       <motion.h1
@@ -47,12 +56,13 @@ export default function HeroText() {
       </motion.h1>
 
       <motion.div
-        className="mt-[75px] animate-bounce"
+        className="mt-[75px] animate-bounce cursor-pointer"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 0.8 }}
+        onClick={() => handleArrowClick()}
       >
-        <IconCircleArrowDown size={64} />
+        <IconCircleArrowDown size={64} stroke={1.2} />
       </motion.div>
     </div>
   );

@@ -40,7 +40,7 @@ export default function NavigationMenuDemo() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 1, duration: 0.8 }}
-      className="py-3 sticky top-0 bg-slate-200/25 backdrop-blur-[2px] max-w-[350px] m-auto rounded-bl-lg rounded-br-lg z-40"
+      className="py-3 bg-slate-200/25 backdrop-blur-[2px] max-w-[350px] m-auto rounded-bl-lg rounded-br-lg z-40"
     >
       <NavigationMenu className="mx-auto">
         <NavigationMenuList>
