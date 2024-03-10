@@ -12,14 +12,14 @@ import {
 
 export default function BioCard() {
   return (
-    <div className="h-screen">
+    <div className="">
     <Card className="xs:w-[100%] sm:px-0 md:px-5 sm:py-0 md:py-10">
       <CardHeader>
-        <CardTitle className="text-3xl">Welcome!</CardTitle>
+        <CardTitle className="text-3xl text-teal-400">Welcome</CardTitle>
       </CardHeader>
       <CardContent>
         <p className="leading-relaxed">
-          Welcome to my porfolio. I'm Luke, a full stack software developer
+          Welcome to my porfolio site. I'm Luke, a full stack software developer
           located in Bonita Springs, Florida. I have years of professional
           experience building completely custom web applications from the ground
           up, and also years of previous experience working in I.T., supporting

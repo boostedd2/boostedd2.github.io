@@ -8,14 +8,34 @@ import Navigation from "@/components/site/Navigation";
 import HeroText from "../components/site/HomeHeroText";
 ---
 
+<style>
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .section {
+    display: flex;
+    justify-content: center;
+  }
+
+</style>
+
 <Navigation client:load />
 
 <Layout title="Portfolio: Luke Arsenault">
-  <main>
+  <main class="page-container">
     <PageLayout>
-      <HeroText client:load />
-      <BioCard />
-      <SkillsCard />
+      <div class="section">
+        <HeroText client:load />
+      </div>
+      <div class="section">
+        <BioCard />
+      </div>
+      <div class="section">
+        <SkillsCard />
+      </div>
     </PageLayout>
   </main>
 </Layout>

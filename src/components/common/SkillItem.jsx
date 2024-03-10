@@ -8,7 +8,7 @@ export default function SkillItem({ image, title }) {
         <div className="flex flex-col items-center justify-center h-40">
           <img src={image} className="object-contain h-full" alt={title} />
         </div>
-        <span className="mt-3 text-2xl">{title}</span>
+        <span className="mt-3 text-2xl hidden md:block">{title}</span>
       </CardContent>
     </Card>
   );
