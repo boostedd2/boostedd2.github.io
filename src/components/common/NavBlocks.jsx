@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { IconForklift } from "@tabler/icons-react";
+import { IconTie } from "@tabler/icons-react";
 import { IconAt } from "@tabler/icons-react";
 import {
   Dialog,
@@ -23,7 +23,7 @@ export default function NavBlocks() {
           <Card className="hover-text-effect-nolift cursor-pointer">
             <CardContent className="p-5 flex flex-col items-center justify-center h-full">
               <div className="flex flex-col items-center justify-center h-40">
-                <IconForklift size={64} stroke={1.2} />
+                <IconTie size={64} stroke={1.2} />
               </div>
               <span className="text-2xl font-thin relative top-[-25px]">
                 Experience
