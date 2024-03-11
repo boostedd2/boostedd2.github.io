@@ -23,14 +23,14 @@ export default function HeroText() {
   const handleArrowClick = () => {
     const bioContentWrapper = document.getElementById('bio-content-wrapper');
     if (bioContentWrapper) {
-      const yOffset = -40;
+      const yOffset = -20;
       const y = bioContentWrapper.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: 'smooth' });
     }
   };
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen relative top-[-80px] sm:top-[-50px]">
+    <div className="flex flex-col justify-center items-center h-screen relative top-[-40px] sm:top-[0px]">
       <motion.h1
         className="scroll-m-20 text-4xl sm:text-3xl md:text-4xl font-extrabold tracking-tight lg:text-5xl"
         variants={textVariants}
