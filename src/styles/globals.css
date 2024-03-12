@@ -33,3 +33,15 @@
     background-color: rgb(241 245 249 / 0.25);
     transition: all 0.2s ease;
 }
+
+.hover-text-effect-plain {
+    user-select: none;
+}
+
+.hover-text-effect-plain {
+    transition: all 1.2s ease;
+}
+
+.hover-text-effect-plain:hover {
+    transition: all 0.2s ease;
+}

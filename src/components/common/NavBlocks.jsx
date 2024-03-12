@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { IconTie } from "@tabler/icons-react";
 import { IconAt } from "@tabler/icons-react";
 import { IconSend2 } from "@tabler/icons-react";
+import { IconX } from "@tabler/icons-react";
 import {
   Dialog,
   DialogContent,
@@ -10,6 +11,7 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
+  DialogClose,
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
@@ -34,8 +36,14 @@ export default function NavBlocks() {
         </DialogTrigger>
 
         <DialogContent className="w-[100%] max-w-[1200px] h-[calc(100%_-_20px)] sm:rounded-none px-10 md:px-20">
-          <div class="w-full">
+          <div className="flex jusitfy-end">
+            <DialogClose asChild>
+              <div className="absolute right-[20px] top-[20px] hover:text-teal-400 hover-text-effect-plain cursor-pointer">
+                <IconX size={32} stroke={1} />
+              </div>
+            </DialogClose>
           </div>
+          <div class="w-full"></div>
         </DialogContent>
       </Dialog>
 
@@ -53,7 +61,15 @@ export default function NavBlocks() {
           </Card>
         </DialogTrigger>
 
-        <DialogContent className="w-[100%] md:max-w-[600px] lg:max-w-[800px] h-[500px] sm:rounded-none px-10 md:px-20">
+        <DialogContent className="w-[100%] md:max-w-[600px] lg:max-w-[800px] h-[525px] sm:rounded-none px-10 md:px-20">
+        <div className="flex jusitfy-end">
+            <DialogClose asChild>
+              <div className="absolute right-[20px] top-[20px] hover:text-teal-400 hover-text-effect-plain cursor-pointer">
+                <IconX size={32} stroke={1} />
+              </div>
+            </DialogClose>
+          </div>
+          
           <div class="w-full flex items-center">
             <form class="w-full">
               <div class="mb-4 pt-4">
@@ -78,7 +94,7 @@ export default function NavBlocks() {
               </div>
               <div class="flex items-center justify-center">
                 <button
-                  class="flex justify-center items-center w-full max-w-[100px] h-[45px] bg-white hover:bg-teal-400 text-teal-400 hover:text-white border border-teal-400 font-bold py-2 px-4 focus:outline-none focus:shadow-outline"
+                  class="flex justify-center items-center w-full max-w-[100px] h-[45px] bg-white hover:bg-teal-400 text-teal-400 hover:text-white hover-text-effect-plain border border-teal-400 font-bold py-2 px-4 focus:outline-none focus:shadow-outline"
                   type="button"
                 >
                   <IconSend2 />
