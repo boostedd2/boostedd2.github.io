@@ -2,6 +2,7 @@ import * as React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { IconTie } from "@tabler/icons-react";
 import { IconAt } from "@tabler/icons-react";
+import { IconSend2 } from "@tabler/icons-react";
 import {
   Dialog,
   DialogContent,
@@ -32,30 +33,9 @@ export default function NavBlocks() {
           </Card>
         </DialogTrigger>
 
-        <DialogContent className="sm:max-w-[425px]">
-          <DialogHeader>
-            <DialogTitle>Edit profile</DialogTitle>
-            <DialogDescription>
-              Make changes to your profile here. Click save when you're done.
-            </DialogDescription>
-          </DialogHeader>
-          <div className="grid gap-4 py-4">
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="name" className="text-right">
-                Name
-              </Label>
-              <Input id="name" value="Pedro Duarte" className="col-span-3" />
-            </div>
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="username" className="text-right">
-                Username
-              </Label>
-              <Input id="username" value="@peduarte" className="col-span-3" />
-            </div>
+        <DialogContent className="w-[100%] max-w-[1200px] h-[calc(100%_-_20px)] sm:rounded-none px-10 md:px-20">
+          <div class="w-full">
           </div>
-          <DialogFooter>
-            <Button type="submit">Save changes</Button>
-          </DialogFooter>
         </DialogContent>
       </Dialog>
 
@@ -73,30 +53,39 @@ export default function NavBlocks() {
           </Card>
         </DialogTrigger>
 
-        <DialogContent className="sm:max-w-[425px]">
-          <DialogHeader>
-            <DialogTitle>Edit profile</DialogTitle>
-            <DialogDescription>
-              Make changes to your profile here. Click save when you're done.
-            </DialogDescription>
-          </DialogHeader>
-          <div className="grid gap-4 py-4">
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="name" className="text-right">
-                Name
-              </Label>
-              <Input id="name" value="Pedro Duarte" className="col-span-3" />
-            </div>
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="username" className="text-right">
-                Username
-              </Label>
-              <Input id="username" value="@peduarte" className="col-span-3" />
-            </div>
+        <DialogContent className="w-[100%] md:max-w-[600px] lg:max-w-[800px] h-[500px] sm:rounded-none px-10 md:px-20">
+          <div class="w-full flex items-center">
+            <form class="w-full">
+              <div class="mb-4 pt-4">
+                <Input
+                  class="h-[50px] appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  type="text"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="mb-4">
+                <Input
+                  class="h-[50px] appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  type="text"
+                  placeholder="Email Address"
+                />
+              </div>
+              <div class="mb-6">
+                <textarea
+                  class="h-[200px] appearance-none resize-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="flex items-center justify-center">
+                <button
+                  class="flex justify-center items-center w-full max-w-[100px] h-[45px] bg-white hover:bg-teal-400 text-teal-400 hover:text-white border border-teal-400 font-bold py-2 px-4 focus:outline-none focus:shadow-outline"
+                  type="button"
+                >
+                  <IconSend2 />
+                </button>
+              </div>
+            </form>
           </div>
-          <DialogFooter>
-            <Button type="submit">Save changes</Button>
-          </DialogFooter>
         </DialogContent>
       </Dialog>
     </div>
