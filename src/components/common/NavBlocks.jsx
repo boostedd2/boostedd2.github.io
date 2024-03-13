@@ -17,6 +17,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
+import Experience from "../modalContent/Experience"
 
 export default function NavBlocks() {
   return (
@@ -36,14 +37,15 @@ export default function NavBlocks() {
         </DialogTrigger>
 
         <DialogContent className="w-[100%] max-w-[1200px] h-[calc(100%_-_20px)] sm:rounded-none px-10 md:px-20">
-          <div className="flex jusitfy-end">
+          <div className="">
             <DialogClose asChild>
               <div className="absolute right-[20px] top-[20px] hover:text-teal-400 hover-text-effect-plain cursor-pointer">
                 <IconX size={32} stroke={1} />
               </div>
             </DialogClose>
+
+            <Experience />
           </div>
-          <div class="w-full"></div>
         </DialogContent>
       </Dialog>
 
@@ -62,14 +64,14 @@ export default function NavBlocks() {
         </DialogTrigger>
 
         <DialogContent className="w-[100%] md:max-w-[600px] lg:max-w-[800px] h-[525px] sm:rounded-none px-10 md:px-20">
-        <div className="flex jusitfy-end">
+          <div className="flex jusitfy-end">
             <DialogClose asChild>
               <div className="absolute right-[20px] top-[20px] hover:text-teal-400 hover-text-effect-plain cursor-pointer">
                 <IconX size={32} stroke={1} />
               </div>
             </DialogClose>
           </div>
-          
+
           <div class="w-full flex items-center">
             <form class="w-full">
               <div class="mb-4 pt-4">
