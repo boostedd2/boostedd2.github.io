@@ -36,7 +36,7 @@ export default function NavBlocks() {
           </Card>
         </DialogTrigger>
 
-        <DialogContent className="w-[100%] max-w-[1200px] h-[calc(100%_-_20px)] sm:rounded-none px-10 md:px-20">
+        <DialogContent className="w-[100%] max-w-[1200px] h-[calc(100%_-_20px)] sm:rounded-none px-10 md:px-20 focus-visible:outline-none">
           <div className="">
             <DialogClose asChild>
               <div className="absolute right-[20px] top-[20px] hover:text-teal-400 hover-text-effect-plain cursor-pointer">
@@ -63,7 +63,7 @@ export default function NavBlocks() {
           </Card>
         </DialogTrigger>
 
-        <DialogContent className="w-[100%] md:max-w-[600px] lg:max-w-[800px] h-[525px] sm:rounded-none px-10 md:px-20">
+        <DialogContent className="w-[100%] md:max-w-[600px] lg:max-w-[800px] h-[525px] sm:rounded-none px-10 md:px-20 focus-visible:outline-none">
           <div className="flex jusitfy-end">
             <DialogClose asChild>
               <div className="absolute right-[20px] top-[20px] hover:text-teal-400 hover-text-effect-plain cursor-pointer">
