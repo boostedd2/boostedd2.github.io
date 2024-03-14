@@ -1,21 +1,22 @@
 export default function Experience() {
   return (
     <div class="w-full py-20">
-
       <div>
         <span className="font-semibold italic text-sm text-slate-500 relative top-[5px]">
           Doc4 (2021 - present)
         </span>
         <h5 className="font-medium text-lg">Full-stack Software Developer</h5>
-        <h6 className="font-thin text-slate-400 relative top-[-4px]">Remote (Full-time)</h6>
+        <h6 className="font-thin text-slate-400 relative top-[-4px]">
+          Remote (Full-time)
+        </h6>
         <hr className="w-[275px] mt-2 opacity-[50%]" />
 
         <ul className="mt-5 pl-[20px] list-disc">
-            <li>Exp1</li>
-            <li>Exp2</li>
-            <li>Exp3</li>
-            <li>Exp4</li>
-            <li>Exp5</li>
+          <li className="mt-1">Building applications used by small to medium sized businesses, including SaaS products.</li>
+          <li className="mt-1">Responsible for defining the software stack, architecture, and design used to structure our applications.</li>
+          <li className="mt-1">Build custom APIs using Django as a headless CMS, and in some cases embed custom UIs into the default Django admin interface.</li>
+          <li className="mt-1"></li>
+          <li className="mt-1"></li>
         </ul>
       </div>
 
@@ -24,16 +25,59 @@ export default function Experience() {
           Adaptive Computing Inc. (7/2023 - 4/2024)
         </span>
         <h5 className="font-medium text-lg">Full-stack Software Developer</h5>
-        <h6 className="font-thin text-slate-400 relative top-[-4px]">Remote (Contract)</h6>
+        <h6 className="font-thin text-slate-400 relative top-[-4px]">
+          Remote (Contract)
+        </h6>
         <hr className="w-[275px] mt-2 opacity-[50%]" />
 
         <ul className="mt-5 pl-[20px] list-disc">
-            <li>Add and maintain features for an application called On-demand Datacenter (NodeJS, ReactJS, Go), used for creating, deploying, and managing HPC clusters in the cloud for our customers supercomputing needs.</li>
-            <li>Experience working with major cloud providers: AWS, Azure, GCP, Oracle, and Open Telekom.</li>
-            <li>Build cloud images that contained the neccessary software for operating HPC clusters in the cloud using Ansible and Cloud-Init.</li>
-            <li>Deploy HPC clusters created from custom cloud images to the cloud using Terraform and Cloud-Init.</li>
-            <li>Add features to support running the Extreme-scale Scientific Software Stack (E4S) on our HPC clusters.</li>
+          <li className="mt-1">
+            Add and maintain features for an application called On-demand Data
+            Center (NodeJS, ReactJS, Go), used for creating, deploying, and
+            managing High Performance Computing clusters in the cloud for our
+            customers supercomputing needs.
+          </li>
+          <li className="mt-1">
+            Experience working with major cloud providers: AWS, Azure, GCP,
+            Oracle, and Open Telekom Communications.
+          </li>
+          <li className="mt-1">
+            Build cloud images that contained the neccessary software for
+            operating HPC clusters in the cloud using Ansible and Cloud-Init.
+          </li>
+          <li className="mt-1">
+            Deploy HPC clusters created from custom cloud images to the cloud
+            using Terraform and Cloud-Init.
+          </li>
+          <li className="mt-1">
+            Add features to support running the Extreme-scale Scientific
+            Software Stack (E4S) on our HPC clusters.
+          </li>
         </ul>
+
+        <h6 className="text-md text-slate-700 italic font-semibold mt-[25px]">
+          Highlight:
+        </h6>
+        <p className="mt-4">
+          Created a VNC session management system that is used to allow remote
+          GUI access to the head node of a multi-instance GPU cluster in the
+          cloud while supporting accelerated graphics. This required me to
+          create the OS configuration and install required software for Ubuntu
+          (Debian), Rocky8 (RHEL), and SLES15 (SUSE Linux) by leveraging Ansible
+          from within our nodeJS application.
+        </p>
+        <p className="mt-4">
+          I configured the server to allow users that exist within the On-demand
+          Data Center application to create a VNC session from the application
+          UI via a button. The button would fire off a request to a custom API
+          endpoint that I created to create VNC sessions based on unique tokens
+          to allow multiple users to use the same VNC service with separate
+          sessions. Once the session was created, I made the application popup a
+          new browser window with the login screen for the VNC connection (noVNC
+          web client), where the user could log in with their username and
+          password. After logging in, the user is given full GUI access to their
+          head node of the cluster with accelerated graphics.
+        </p>
       </div>
 
       <div className="mt-20">
@@ -41,17 +85,34 @@ export default function Experience() {
           Altiview Technology Group (2020 - 2021)
         </span>
         <h5 className="font-medium text-lg">Software Developer</h5>
-        <h6 className="font-thin text-slate-400 relative top-[-4px]">Remote (Contract)</h6>
+        <h6 className="font-thin text-slate-400 relative top-[-4px]">
+          Remote (Contract)
+        </h6>
         <hr className="w-[275px] mt-2 opacity-[50%]" />
 
         <ul className="mt-5 pl-[20px] list-disc">
-            <li>Build several ReactJS pages and components for various web applications while referencing Photoshop design files.</li>
-            <li>Push a project built with NodeJS and ReactJS to completion.</li>
-            <li>Add new features to a Django application.</li>
-            <li>Work with the lead developer and the team to deliver completed projects.</li>
+          <li className="mt-1">
+            Build several ReactJS pages and components for various web
+            applications while referencing Photoshop design files.
+          </li>
+          <li className="mt-1">Push a project built with NodeJS and ReactJS to production.</li>
+          <li className="mt-1">Add new features to a Django application.</li>
+          <li className="mt-1">
+            Work with the lead developer and the team to deliver completed
+            projects.
+          </li>
         </ul>
+
+        <h6 className="text-md text-slate-700 italic font-semibold mt-[25px]">
+          Highlight:
+        </h6>
+        <p className="mt-4">
+          Although I already deployed a few of my own personal projects before I
+          got into this role, this was the first role where I was tasked with
+          finishing an application (nodejs, reactjs), and deploying the project
+          for production.
+        </p>
       </div>
-      
     </div>
   );
 }

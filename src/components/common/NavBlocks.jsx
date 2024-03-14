@@ -37,7 +37,7 @@ export default function NavBlocks() {
         </DialogTrigger>
 
         <DialogContent className="w-[100%] max-w-[1200px] h-[calc(100%_-_20px)] sm:rounded-none px-10 md:px-20 focus-visible:outline-none">
-          <div className="">
+          <div className="overflow-y-scroll">
             <DialogClose asChild>
               <div className="absolute right-[20px] top-[20px] hover:text-teal-400 hover-text-effect-plain cursor-pointer">
                 <IconX size={32} stroke={1} />
