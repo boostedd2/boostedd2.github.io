@@ -21,22 +21,22 @@ import Experience from "../modalContent/Experience"
 
 export default function NavBlocks() {
   return (
-    <div className="grid grid-cols-2 gap-5 mt-[20px] w-full">
+    <div className="grid grid-cols-2 gap-2 sm:gap-5 mt-[10px] sm:mt-[20px] w-full">
       <Dialog>
         <DialogTrigger asChild>
-          <Card className="hover-text-effect-nolift cursor-pointer">
+          <Card className="hover-text-effect-nolift cursor-pointer h-[150px] sm:h-full">
             <CardContent className="p-5 flex flex-col items-center justify-center h-full">
               <div className="flex flex-col items-center justify-center h-40">
                 <IconTie size={64} stroke={1.2} />
               </div>
-              <span className="text-2xl font-thin relative top-[-25px]">
+              <span className="text-2xl font-thin relative top-[-15px] sm:top-[-25px]">
                 Experience
               </span>
             </CardContent>
           </Card>
         </DialogTrigger>
 
-        <DialogContent className="w-[100%] max-w-[1200px] h-[calc(100%_-_20px)] sm:rounded-none px-10 md:px-20 focus-visible:outline-none">
+        <DialogContent className="w-[100%] max-w-[1200px] h-full lg:h-[calc(100%_-_20px)] sm:rounded-none px-10 md:px-20 focus-visible:outline-none">
           <div className="overflow-y-scroll">
             <DialogClose asChild>
               <div className="absolute right-[20px] top-[20px] hover:text-teal-400 hover-text-effect-plain cursor-pointer">
@@ -51,12 +51,12 @@ export default function NavBlocks() {
 
       <Dialog>
         <DialogTrigger asChild>
-          <Card className="hover-text-effect-nolift cursor-pointer">
+          <Card className="hover-text-effect-nolift cursor-pointer h-[150px] sm:h-full">
             <CardContent className="p-5 flex flex-col items-center justify-center h-full">
               <div className="flex flex-col items-center justify-center h-40">
                 <IconAt size={64} stroke={1.2} />
               </div>
-              <span className="text-2xl font-thin relative top-[-25px]">
+              <span className="text-2xl font-thin relative top-[-15px] sm:top-[-25px]">
                 Contact
               </span>
             </CardContent>

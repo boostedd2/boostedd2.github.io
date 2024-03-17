@@ -24,14 +24,14 @@
 }
 
 .hover-text-effect-nolift {
-    transition: all 1.2s ease;
+    transition: color 1.2s ease, background-color 1.2s ease, box-shadow 1.2s ease;
 }
 
 .hover-text-effect-nolift:hover {
     box-shadow: 0 4px 8px rgba(45 212 191 / 0.15);
     color: rgb(45 212 191 / var(--tw-text-opacity));
     background-color: rgb(241 245 249 / 0.25);
-    transition: all 0.2s ease;
+    transition: color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .hover-text-effect-plain {

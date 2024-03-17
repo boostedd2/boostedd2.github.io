@@ -23,7 +23,7 @@ export default function HeroText() {
   const handleArrowClick = () => {
     const bioContentWrapper = document.getElementById('bio-content-wrapper');
     if (bioContentWrapper) {
-      const yOffset = -20;
+      const yOffset = -4;
       const y = bioContentWrapper.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: 'smooth' });
     }
