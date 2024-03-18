@@ -12,12 +12,38 @@ export default function Experience() {
         <hr className="w-[275px] mt-2 opacity-[50%]" />
 
         <ul className="mt-5 pl-[20px] list-disc">
-          <li className="mt-1">Building applications used by small to medium sized businesses, including SaaS products.</li>
-          <li className="mt-1">Responsible for defining the software stack, architecture, and design used to structure our applications.</li>
-          <li className="mt-1">Build custom APIs using Django as a headless CMS, and in some cases embed custom UIs into the default Django admin interface.</li>
-          <li className="mt-1"></li>
-          <li className="mt-1"></li>
+          <li className="mt-1">
+            Build SaaS applications used by small to medium sized businesses.
+          </li>
+          <li className="mt-1">
+            Responsible for defining the software stack, architecture, and
+            design used to structure our applications.
+          </li>
+          <li className="mt-1">
+            Build custom APIs using Django as a headless CMS, and in some cases
+            embed custom UIs into the default Django admin interface.
+          </li>
+          <li className="mt-1">Scripting and autmation</li>
+          <li className="mt-1">
+            Convert Adobe XD or Figma designs into a complete application
+          </li>
+          <li className="mt-1">Deploy and maintain applications</li>
         </ul>
+
+        <h6 className="text-md text-slate-700 italic font-semibold mt-[30px]">
+          Highlights:
+        </h6>
+        <p className="mt-1">
+          Being the sole developer, I am in charge of managing all of the
+          technical details for building applications, gathering requirments,
+          choosing the correct software stack for our needs, and preparing the
+          production environment for deploying applications.
+        </p>
+        <p className="mt-1">
+          Created a city management application that pulls large record sets from an ArcGIS
+          API, stores the spatial data in a database using GIS extensions, and allows
+          displaying or manipulating the GIS data on a map.
+        </p>
       </div>
 
       <div className="mt-20">
@@ -55,10 +81,10 @@ export default function Experience() {
           </li>
         </ul>
 
-        <h6 className="text-md text-slate-700 italic font-semibold mt-[25px]">
-          Highlight:
+        <h6 className="text-md text-slate-700 italic font-semibold mt-[30px]">
+          Highlights:
         </h6>
-        <p className="mt-4">
+        <p className="mt-1">
           Created a VNC session management system that is used to allow remote
           GUI access to the head node of a multi-instance GPU cluster in the
           cloud while supporting accelerated graphics. This required me to
@@ -95,7 +121,9 @@ export default function Experience() {
             Build several ReactJS pages and components for various web
             applications while referencing Photoshop design files.
           </li>
-          <li className="mt-1">Push a project built with NodeJS and ReactJS to production.</li>
+          <li className="mt-1">
+            Push a project built with NodeJS and ReactJS to production.
+          </li>
           <li className="mt-1">Add new features to a Django application.</li>
           <li className="mt-1">
             Work with the lead developer and the team to deliver completed
@@ -103,10 +131,10 @@ export default function Experience() {
           </li>
         </ul>
 
-        <h6 className="text-md text-slate-700 italic font-semibold mt-[25px]">
-          Highlight:
+        <h6 className="text-md text-slate-700 italic font-semibold mt-[30px]">
+          Highlights:
         </h6>
-        <p className="mt-4">
+        <p className="mt-">
           Although I already deployed a few of my own personal projects before I
           got into this role, this was the first role where I was tasked with
           finishing an application (nodejs, reactjs), and deploying the project
