@@ -45,3 +45,12 @@
 .hover-text-effect-plain:hover {
     transition: all 0.2s ease;
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

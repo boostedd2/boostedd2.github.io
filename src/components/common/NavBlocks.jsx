@@ -36,8 +36,8 @@ export default function NavBlocks() {
           </Card>
         </DialogTrigger>
 
-        <DialogContent className="w-[100%] max-w-[1200px] h-full lg:h-[calc(100%_-_20px)] sm:rounded-none px-10 md:px-20 focus-visible:outline-none">
-          <div className="overflow-y-scroll">
+        <DialogContent className="w-[100%] max-w-[1200px] h-full lg:h-[calc(100%_-_20px)] sm:rounded-none px-[20px] md:px-20 focus-visible:outline-none">
+          <div className="overflow-y-scroll scrollbar-hide">
             <DialogClose asChild>
               <div className="absolute right-[20px] top-[20px] hover:text-teal-400 hover-text-effect-plain cursor-pointer">
                 <IconX size={32} stroke={1} />

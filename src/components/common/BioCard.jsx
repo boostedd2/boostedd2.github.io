@@ -13,7 +13,7 @@ import {
 export default function BioCard() {
   return (
     <div id="bio-content-wrapper">
-      <Card className="xs:w-[100%] sm:px-0 md:px-5 sm:py-0 md:py-10">
+      <Card className="xs:w-[100%] mt-[10px] sm:mt-[20px] sm:p-0 md:p-5">
         <CardHeader className="pb-2 sm:pb-6">
           <CardTitle className="text-3xl text-teal-400">Welcome</CardTitle>
         </CardHeader>

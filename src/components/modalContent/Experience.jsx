@@ -1,6 +1,6 @@
 export default function Experience() {
   return (
-    <div class="w-full py-20">
+    <div class="w-full py-10 sm:py-20 mb-[50px] sm:mb-0">
       <div>
         <span className="font-semibold italic text-sm text-slate-500 relative top-[5px]">
           Doc4 (2021 - present)
@@ -11,7 +11,7 @@ export default function Experience() {
         </h6>
         <hr className="w-[275px] mt-2 opacity-[50%]" />
 
-        <ul className="mt-5 pl-[20px] list-disc">
+        <ul className="mt-5 pl-[25px] list-disc">
           <li className="mt-1">
             Build SaaS applications used by small to medium sized businesses.
           </li>
@@ -30,11 +30,11 @@ export default function Experience() {
           <li className="mt-1">Deploy and maintain applications</li>
         </ul>
 
-        <h6 className="text-md text-slate-700 italic font-semibold mt-[30px]">
+        <h6 className="text-md text-slate-700 font-semibold mt-[30px]">
           Highlights:
         </h6>
         <p className="mt-1">
-          Being the sole developer, I am in charge of managing all of the
+          Manage all of the
           technical details for building applications, gathering requirments,
           choosing the correct software stack for our needs, and preparing the
           production environment for deploying applications.
@@ -46,7 +46,7 @@ export default function Experience() {
         </p>
       </div>
 
-      <div className="mt-20">
+      <div className="mt-[100px]">
         <span className="font-semibold italic text-sm text-slate-500 relative top-[5px]">
           Adaptive Computing Inc. (7/2023 - 4/2024)
         </span>
@@ -56,7 +56,7 @@ export default function Experience() {
         </h6>
         <hr className="w-[275px] mt-2 opacity-[50%]" />
 
-        <ul className="mt-5 pl-[20px] list-disc">
+        <ul className="mt-5 pl-[25px] list-disc">
           <li className="mt-1">
             Add and maintain features for an application called On-demand Data
             Center (NodeJS, ReactJS, Go), used for creating, deploying, and
@@ -81,7 +81,7 @@ export default function Experience() {
           </li>
         </ul>
 
-        <h6 className="text-md text-slate-700 italic font-semibold mt-[30px]">
+        <h6 className="text-md text-slate-700 font-semibold mt-[30px]">
           Highlights:
         </h6>
         <p className="mt-1">
@@ -106,7 +106,7 @@ export default function Experience() {
         </p>
       </div>
 
-      <div className="mt-20">
+      <div className="mt-[100px]">
         <span className="font-semibold italic text-sm text-slate-500 relative top-[5px]">
           Altiview Technology Group (2020 - 2021)
         </span>
@@ -116,7 +116,7 @@ export default function Experience() {
         </h6>
         <hr className="w-[275px] mt-2 opacity-[50%]" />
 
-        <ul className="mt-5 pl-[20px] list-disc">
+        <ul className="mt-5 pl-[25px] list-disc">
           <li className="mt-1">
             Build several ReactJS pages and components for various web
             applications while referencing Photoshop design files.
@@ -131,7 +131,7 @@ export default function Experience() {
           </li>
         </ul>
 
-        <h6 className="text-md text-slate-700 italic font-semibold mt-[30px]">
+        <h6 className="text-md text-slate-700 font-semibold mt-[30px]">
           Highlights:
         </h6>
         <p className="mt-">
