@@ -46,7 +46,7 @@ export default function Experience() {
         </p>
       </div>
 
-      <div className="mt-[100px]">
+      <div className="mt-[125px]">
         <span className="font-semibold italic text-sm text-slate-500 relative top-[5px]">
           Adaptive Computing Inc. (7/2023 - 4/2024)
         </span>
@@ -106,7 +106,7 @@ export default function Experience() {
         </p>
       </div>
 
-      <div className="mt-[100px]">
+      <div className="mt-[125px]">
         <span className="font-semibold italic text-sm text-slate-500 relative top-[5px]">
           Altiview Technology Group (2020 - 2021)
         </span>
