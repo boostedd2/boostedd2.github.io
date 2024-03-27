@@ -19,18 +19,14 @@ export default function BioCard() {
         </CardHeader>
         <CardContent>
           <p className="leading-normal sm:leading-relaxed">
-            I'm Luke, a full stack software
-            developer located in Bonita Springs, Florida. I have years of
-            professional experience building custom web applications, and years of previous experience working in
-            I.T., supporting small businesses. My two favorite programming
-            languages of use are Python and JavaScript, both of these languages are extremely versatile when it comes to building custom software solutions.
+          I'm Luke, a full-stack software developer located in Bonita Springs, Florida. I have years of professional experience building custom web applications and years of previous experience working in the I.T. field, supporting small businesses. My two favorite programming languages to use are Python and JavaScript, as both of these languages are extremely versatile when it comes to building custom software solutions.
           </p>
           <p className="leading-normal sm:leading-relaxed mt-4">
-            My experience includes building a wide range of applications, and taking on the tasks of: application architecture, devops, maintaining existing applications, scripting, and consulting.
+            I possess a wide range of experience in developing a variety of applications, where I've taken on roles such as application architecture, DevOps implementation, ongoing maintenance of existing systems, scripting, and providing consulting services.
           </p>
           <p className="leading-normal sm:leading-relaxed mt-4">
             I really enjoy building software and spend a lot of my time either
-            writing software or reading books about software, and my goal is to create great products and user experiences.
+            writing software or studying software architecture, and my goal is to create great products and user experiences.
           </p>
         </CardContent>
       </Card>
