@@ -114,11 +114,15 @@ export default function NavBlocks() {
 
           <div class="w-full flex items-center">
             <form onSubmit={handleSubmit} class="w-full">
+              <input type="text" name="firstName" value={formData.firstName} onChange={handleInputChange} style={{ display: 'none' }} />
+              <input type="text" name="lastName" value={formData.lastName} onChange={handleInputChange} style={{ display: 'none' }} />
+
               <div class="mb-4 pt-4">
                 <Input
                   class="h-[50px] appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   type="text"
                   placeholder="Name"
+                  required
                   name="name"
                   value={formData.name}
                   onChange={handleInputChange}
@@ -127,8 +131,9 @@ export default function NavBlocks() {
               <div class="mb-4">
                 <Input
                   class="h-[50px] appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  type="text"
+                  type="email"
                   placeholder="Email Address"
+                  required
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
@@ -138,6 +143,7 @@ export default function NavBlocks() {
                 <textarea
                   class="h-[200px] appearance-none resize-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   placeholder="Message"
+                  required
                   name="message"
                   value={formData.message}
                   onChange={handleInputChange}
