@@ -23,8 +23,7 @@ export default function BioCard() {
             developer located in Bonita Springs, Florida. I have years of
             professional experience building custom web applications, and years of previous experience working in
             I.T., supporting small businesses. My two favorite programming
-            languages of use are Python and JavaScript, both of these languages
-            have great community support, and they're both extremely versatile.
+            languages of use are Python and JavaScript, both of these languages are extremely versatile when it comes to building custom software solutions.
           </p>
           <p className="leading-normal sm:leading-relaxed mt-4">
             My experience includes building a wide range of applications, and taking on the tasks of: application architecture, devops, maintaining existing applications, scripting, and consulting.

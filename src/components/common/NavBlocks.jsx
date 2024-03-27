@@ -110,10 +110,10 @@ export default function NavBlocks() {
           </Card>
         </DialogTrigger>
 
-        <DialogContent className="w-[100%] md:max-w-[600px] lg:max-w-[800px] h-[525px] sm:rounded-none px-10 md:px-20 focus-visible:outline-none">
+        <DialogContent className={`w-[100%] md:max-w-[600px] lg:max-w-[800px] h-[300px] md:h-[525px] sm:rounded-none px-10 md:px-20 focus-visible:outline-none`}>
           <div className="flex jusitfy-end">
             <DialogClose asChild>
-              <div className="absolute right-[20px] top-[20px] hover:text-teal-400 hover-text-effect-plain cursor-pointer">
+              <div className="absolute right-[10px] md:right-[20px] top-[10px] md:top-[20px] hover:text-teal-400 hover-text-effect-plain cursor-pointer">
                 <IconX size={32} stroke={1} />
               </div>
             </DialogClose>
@@ -137,9 +137,9 @@ export default function NavBlocks() {
                   style={{ display: "none" }}
                 />
 
-                <div class="mb-4 pt-4">
+                <div class="mb-2 md:mb-4 pt-6 md:pt-4">
                   <Input
-                    class="h-[50px] appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    class="h-[35px] md:h-[35px] md:h-[50px] appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     type="text"
                     placeholder="Name"
                     required
@@ -148,9 +148,9 @@ export default function NavBlocks() {
                     onChange={handleInputChange}
                   />
                 </div>
-                <div class="mb-4">
+                <div class="mb-2 md:mb-4">
                   <Input
-                    class="h-[50px] appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    class="h-[35px] md:h-[50px] appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     type="email"
                     placeholder="Email Address"
                     required
@@ -159,9 +159,9 @@ export default function NavBlocks() {
                     onChange={handleInputChange}
                   />
                 </div>
-                <div class="mb-6">
+                <div class="mb-3 md:mb-6">
                   <textarea
-                    class="h-[200px] appearance-none resize-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    class="h-[80px] md:h-[200px] appearance-none resize-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     placeholder="Message"
                     required
                     name="message"
@@ -171,7 +171,7 @@ export default function NavBlocks() {
                 </div>
                 <div class="flex items-center justify-center">
                   <button
-                    class="flex justify-center items-center w-full max-w-[100px] h-[45px] bg-white hover:bg-teal-400 text-teal-400 hover:text-white hover-text-effect-plain border border-teal-400 font-bold py-2 px-4 focus:outline-none focus:shadow-outline"
+                    class="flex justify-center items-center w-full max-w-[100px] h-[35px] md:h-[45px] bg-white hover:bg-teal-400 text-teal-400 hover:text-white hover-text-effect-plain border border-teal-400 font-bold py-2 px-4 focus:outline-none focus:shadow-outline"
                     type="submit"
                   >
                     <IconSend2 />
