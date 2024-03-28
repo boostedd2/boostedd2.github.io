@@ -62,7 +62,8 @@ export default function NavBlocks() {
 
     } catch (error) {
       console.error("Error:", error);
-      // Handle error feedback here, e.g., show an error message to the user
+      setFormSending(true)
+      setFormSent(false)
     }
   };
 

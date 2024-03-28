@@ -16,18 +16,18 @@ export default function Experience() {
             Build SaaS applications used by small to medium sized businesses.
           </li>
           <li className="mt-1">
-            Responsible for defining the software stack, architecture, and
+            Responsible for defining the software stack as well as the architecture and
             design used to structure our applications.
           </li>
           <li className="mt-1">
-            Build custom APIs using Django as a headless CMS, and in some cases
-            embed custom UIs into the default Django admin interface.
+            Build custom APIs using Django or Strapi as a headless CMS, and if needed,
+            embed custom UIs into the default Django or Strapi admin interface.
           </li>
-          <li className="mt-1">Scripting and autmation</li>
           <li className="mt-1">
-            Convert Adobe XD or Figma designs into a complete application
+            Convert Adobe XD or Figma designs into complete frontend applications.
           </li>
-          <li className="mt-1">Deploy and maintain applications</li>
+          <li className="mt-1">Scripting and automation.</li>
+          <li className="mt-1">Deploy and maintain servers, applications, and databases.</li>
         </ul>
 
         <h6 className="text-md text-slate-700 font-semibold mt-[30px]">
@@ -39,10 +39,10 @@ export default function Experience() {
           choosing the correct software stack for our needs, and preparing the
           production environment for deploying applications.
         </p>
-        <p className="mt-1">
+        <p className="mt-4">
           Created a city management application that pulls large record sets from an ArcGIS
           API, stores the spatial data in a database using GIS extensions, and allows
-          displaying or manipulating the GIS data on a map.
+          displaying and manipulating the GIS data on a map.
         </p>
       </div>
 
@@ -88,8 +88,7 @@ export default function Experience() {
           Created a VNC session management system that is used to allow remote
           GUI access to the head node of a multi-instance GPU cluster in the
           cloud while supporting accelerated graphics. This required me to
-          create the OS configuration and install required software for Ubuntu
-          (Debian), Rocky8 (RHEL), and SLES15 (SUSE Linux) by leveraging Ansible
+          create the OS configuration and install required software for Ubuntu, Rocky8, and SLES15 by leveraging Ansible
           from within our nodeJS application.
         </p>
         <p className="mt-4">
@@ -134,7 +133,7 @@ export default function Experience() {
         <h6 className="text-md text-slate-700 font-semibold mt-[30px]">
           Highlights:
         </h6>
-        <p className="mt-">
+        <p className="mt-1">
           Although I already deployed a few of my own personal projects before I
           got into this role, this was the first role where I was tasked with
           finishing an application (nodejs, reactjs), and deploying the project
