@@ -16,33 +16,41 @@ export default function Experience() {
             Build SaaS applications used by small to medium sized businesses.
           </li>
           <li className="mt-1">
-            Responsible for defining the software stack as well as the architecture and
-            design used to structure our applications.
+            Responsible for defining the software stack as well as the
+            architecture and design used to structure our applications.
           </li>
           <li className="mt-1">
-            Build custom APIs using Django or Strapi as a headless CMS, and if needed,
-            embed custom UIs into the default Django or Strapi admin interface.
+            Build custom APIs using Django or Strapi as a headless CMS, and if
+            needed, embed custom UIs into the default Django or Strapi admin
+            interface.
           </li>
           <li className="mt-1">
-            Convert Adobe XD or Figma designs into complete frontend applications.
+            Convert Adobe XD or Figma designs into complete frontend
+            applications.
           </li>
           <li className="mt-1">Scripting and automation.</li>
-          <li className="mt-1">Deploy and maintain servers, applications, and databases.</li>
+          <li className="mt-1">
+            Deploy and maintain servers, applications, and databases.
+          </li>
         </ul>
 
         <h6 className="text-md text-slate-700 font-semibold mt-[30px]">
           Highlights:
         </h6>
         <p className="mt-1">
-          Manage all of the
-          technical details for building applications, gathering requirments,
-          choosing the correct software stack for our needs, and preparing the
-          production environment for deploying applications.
+          Manage all of the technical details for building applications,
+          gathering requirements, choosing the correct software stack for our
+          needs, and preparing the production environment for deploying
+          applications.
         </p>
         <p className="mt-4">
-          Created a city management application that pulls large record sets from an ArcGIS
-          API, stores the spatial data in a database using GIS extensions, and allows
-          displaying and manipulating the GIS data on a map.
+          Created a city management application that pulls large sets of data
+          from an ArcGIS API, stores the data in a database with added spatial
+          support using GIS extensions, and allows displaying and manipulating
+          the GIS data on a map. This took several different techniques to
+          ensure that accessing thousands of layer features, processing and
+          merging separate user managable layers, and rendering them on the
+          client side was performant enough to be usable.
         </p>
       </div>
 
@@ -88,8 +96,9 @@ export default function Experience() {
           Created a VNC session management system that is used to allow remote
           GUI access to the head node of a multi-instance GPU cluster in the
           cloud while supporting accelerated graphics. This required me to
-          create the OS configuration and install required software for Ubuntu, Rocky8, and SLES15 by leveraging Ansible
-          from within our nodeJS application.
+          create the OS configuration and install required software for Ubuntu,
+          Rocky8, and SLES15 by leveraging Ansible from within our nodeJS
+          application.
         </p>
         <p className="mt-4">
           I configured the server to allow users that exist within the On-demand
