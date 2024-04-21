@@ -1,6 +1,6 @@
 export default function Experience() {
   return (
-    <div class="w-full py-5 pb-10 sm:pb-0 mb-[50px] sm:mb-0">
+    <div class="w-full py-5 pb-10 sm:pb-20 sm:pb-0 mb-[50px] sm:mb-0">
       <div>
         <span className="font-semibold italic text-sm text-slate-500 relative top-[5px]">
           Doc4 (2021 - present)

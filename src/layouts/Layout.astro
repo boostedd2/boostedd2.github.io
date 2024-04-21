@@ -1,6 +1,6 @@
 ---
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -8,28 +8,46 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="Content-Language" content="en">
-		<meta name="description" content="Luke Arsenault's portfolio site" />
-		<meta name="keywords" content="full stack developer, portfolio, JavaScript, Python, ReactJS, Django, Node.js, Linux">
-		<meta name="author" content="Your Name">
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name="robots" content="index, follow">
-		<title>{title}</title>
-	</head>
-	<body class="bg-slate-100/25">
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="description" content="Luke Arsenault's portfolio site" />
+    <meta
+      name="keywords"
+      content="full stack developer, portfolio, JavaScript, Python, ReactJS, Django, Node.js, Linux"
+    />
+    <meta name="author" content="Luke Arsenault" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="robots" content="index, follow" />
+    <title>{title}</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Luke Arsenault",
+        "jobTitle": "Full-Stack Software Developer",
+        "url": "https://lukearsenault.com",
+        "description": "I'm Luke, a full-stack software developer located in Bonita Springs, Florida. I have years of professional experience building custom web applications and years of previous experience working in the I.T. field, supporting small businesses. My two favorite programming languages to use are Python and JavaScript, as both of these languages are extremely versatile when it comes to building custom software. I possess a wide range of experience in developing software, where I've taken on the tasks of designing software architecture, DevOps implementation, ongoing maintenance of existing systems, scripting, and consulting. I really enjoy building software and spend a lot of my time either writing software or studying software architecture, and I strive to create great products and user experiences.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bonita Springs",
+          "addressRegion": "FL",
+          "addressCountry": "USA"
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-slate-100/25">
+    <slot />
+  </body>
 </html>
 
 <style is:global>
-	:root {
-
-	}
-	html {
-		
-	}
+  :root {
+  }
+  html {
+  }
 </style>

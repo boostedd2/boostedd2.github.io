@@ -114,7 +114,7 @@ export default function NavBlocks() {
         <DialogContent className={`w-[90%] sm:w-[100%] md:max-w-[600px] lg:max-w-[800px] h-[300px] md:h-[525px] sm:rounded-none px-10 md:px-20 focus-visible:outline-none`}>
           <div className="flex jusitfy-end">
             <DialogClose asChild>
-              <div className="absolute right-[10px] md:right-[20px] top-[10px] md:top-[20px] hover:text-teal-400 hover-text-effect-plain cursor-pointer">
+              <div className="absolute right-[15px] top-[15px] hover:text-teal-400 hover-text-effect-plain cursor-pointer">
                 <IconX size={32} stroke={1} />
               </div>
             </DialogClose>

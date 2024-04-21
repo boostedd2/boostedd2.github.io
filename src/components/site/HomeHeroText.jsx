@@ -59,10 +59,10 @@ export default function HeroText() {
         className="mt-[75px] animate-bounce cursor-pointer"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 0.8 }}
+        transition={{ delay: 0.78, duration: 0.8 }}
         onClick={() => handleArrowClick()}
       >
-        <IconCircleArrowDown size={64} stroke={1.2} />
+        <IconCircleArrowDown size={60} stroke={1.2} />
       </motion.div>
     </div>
   );
