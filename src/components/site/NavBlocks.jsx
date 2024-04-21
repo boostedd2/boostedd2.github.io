@@ -61,7 +61,6 @@ export default function NavBlocks() {
       });
 
     } catch (error) {
-      console.error("Error:", error);
       setFormSending(true)
       setFormSent(false)
     }
@@ -182,7 +181,7 @@ export default function NavBlocks() {
             </div>
           )}
 
-          {formSent && 
+          {formSent &&
           <div>
             <p className="text-3xl text-teal-400 text-center">Message sent, speak to you soon!</p>
             </div>}

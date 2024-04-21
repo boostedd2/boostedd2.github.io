@@ -13,20 +13,18 @@ export default function Experience() {
 
         <ul className="mt-5 pl-[25px] list-disc">
           <li className="mt-1">
-            Build SaaS applications used by small to medium sized businesses.
+            Build SaaS applications used by small businesses and startups.
           </li>
           <li className="mt-1">
             Responsible for defining the software stack as well as the
             architecture and design used to structure our applications.
           </li>
           <li className="mt-1">
-            Build custom APIs using Django or Strapi as a headless CMS, and if
-            needed, embed custom UIs into the default Django or Strapi admin
-            interface.
+            Build REST APIs and custom CMS solutions with Django.
           </li>
           <li className="mt-1">
             Convert Adobe XD or Figma designs into complete frontend
-            applications.
+            applications built with React.
           </li>
           <li className="mt-1">Scripting and automation.</li>
           <li className="mt-1">
@@ -44,12 +42,12 @@ export default function Experience() {
           applications.
         </p>
         <p className="mt-4">
-          Created a city management application that pulls large sets of data
-          from an ArcGIS API, stores the data in a database with added spatial
-          support using GIS extensions, and allows displaying and manipulating
+          Created a city permitting application that pulls large sets of data
+          from an ArcGIS API server instance, stores the data in a database with added spatial
+          support using postgres GIS extensions, and allows displaying and manipulating
           the GIS data on a map. This took several different techniques to
           ensure that accessing thousands of layer features, processing and
-          merging separate user managable layers, and rendering them on the
+          merging separate user manageable layers, and rendering them on the
           client side was performant enough to be usable.
         </p>
       </div>
@@ -67,7 +65,7 @@ export default function Experience() {
         <ul className="mt-5 pl-[25px] list-disc">
           <li className="mt-1">
             Add and maintain features for an application called On-demand Data
-            Center (NodeJS, ReactJS, Go), used for creating, deploying, and
+            Center, used for creating, deploying, and
             managing High Performance Computing clusters in the cloud for our
             customers supercomputing needs.
           </li>
@@ -76,7 +74,7 @@ export default function Experience() {
             Oracle, and Open Telekom Communications.
           </li>
           <li className="mt-1">
-            Build cloud images that contained the neccessary software for
+            Build cloud images that contained the necessary software for
             operating HPC clusters in the cloud using Ansible and Cloud-Init.
           </li>
           <li className="mt-1">
@@ -84,7 +82,7 @@ export default function Experience() {
             using Terraform and Cloud-Init.
           </li>
           <li className="mt-1">
-            Add features to support running the Extreme-scale Scientific
+            Add features to support and enhance running the Extreme-scale Scientific
             Software Stack (E4S) on our HPC clusters.
           </li>
         </ul>
