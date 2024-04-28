@@ -41,13 +41,15 @@ export default function Experience() {
           allows cities to display their own hosted GIS data on a map, and add
           or edit additional layers. This took several different techniques to
           ensure that fetching thousands of layer features, processing separate
-          user manageable layers, and rendering them on the client side remained performant.
+          user manageable layers, and rendering them on the client side remained
+          performant.
         </p>
         <p className="mt-4">
           Working together with city management, we created an application that
           helps organize and visualize GIS data into an easy to use platform,
           where architects can provide high quality building designs, and the
-          city can streamline the permitting process for future city development.
+          city can streamline the permitting process for future city
+          development.
         </p>
       </div>
 
@@ -69,7 +71,8 @@ export default function Experience() {
             needs.
           </li>
           <li className="mt-2">
-            Linux system administration for Debian, Red Hat, SUSE, and other Red Hat based distros.
+            Linux system administration for Debian, Red Hat, SUSE, and other Red
+            Hat based distros.
           </li>
           <li className="mt-2">
             Experience working with major cloud providers: AWS, Azure, GCP,
@@ -80,8 +83,8 @@ export default function Experience() {
             operating HPC clusters in the cloud using Ansible and Cloud-Init.
           </li>
           <li className="mt-2">
-            Deploy private cloud HPC clusters created from custom cloud images to the cloud
-            using Terraform and Cloud-Init.
+            Deploy private cloud HPC clusters created from custom cloud images
+            to the cloud using Terraform and Cloud-Init.
           </li>
           <li className="mt-2">
             Add features to support and enhance running the Extreme-scale
@@ -136,12 +139,16 @@ export default function Experience() {
         <ul className="mt-7 pl-[25px] list-disc">
           <li className="mt-2">
             Build several ReactJS pages and components for various web
-            applications while referencing Photoshop design files.
+            applications.
+          </li>
+          <li className="mt-2">
+            Reference Adobe PS design files to create UI elements.
           </li>
           <li className="mt-2">
             Push a project built with NodeJS and ReactJS to production.
           </li>
           <li className="mt-2">Add new features to a Django application.</li>
+          <li className="mt-2">Scripting and automation of server tasks.</li>
           <li className="mt-2">
             Work with the lead developer and the team to deliver completed
             projects.
@@ -152,8 +159,23 @@ export default function Experience() {
           Highlights:
         </h6>
         <p className="mt-1">
+          Created a script to convert full-length articles into manageable page
+          section components, allowing more customization when creating or
+          editing the content.
+        </p>
+        <p className="mt-4">
+          This was done using the BeautifulSoup Python library. We split up the
+          article into blocks based on the content, where each block would be
+          defined by a Heading tag and then supporting body elements like
+          Paragraph, Lists, Tables, so on. These blocks were broken down into
+          their own objects stored within the database. We converted over 200
+          monolithic pages into individual page blocks, giving more control over
+          the ordering or layout of content, as well as allow plugins to be
+          embedded in the page through the new page sections.
+        </p>
+        <p className="mt-4">
           Although I already deployed a few of my own personal projects before I
-          got into this role, this was the first role where I was tasked with
+          got into this role, this was also the first time I was tasked with
           finishing an application, and deploying the project for production.
         </p>
       </div>

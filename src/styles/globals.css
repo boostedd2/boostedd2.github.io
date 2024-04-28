@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+ul {
+    list-style-type: none !important;
+}
+
+ul li {
+    line-height: 20px;
+}
+
+ul li::before {
+    position: relative;
+    top: -1px;
+    left: -5px;
+    content: "+";
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    width: 1.2em;
+    margin-left: -1.2em;
+    opacity: 0.5;
+}
 
 .hover-text-effect {
     user-select: none;
