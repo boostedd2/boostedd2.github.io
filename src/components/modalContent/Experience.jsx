@@ -38,7 +38,7 @@ export default function Experience() {
         <p className="mt-1">
           Created a city permitting application that pulls large sets of data
           from various city hosted ArcGIS API Server instances. The application
-          allows cities to display their own hosted GIS data on a map, and add
+          allows cities to display their self hosted GIS data on a map, and add
           or edit additional layers. This took several different techniques to
           ensure that fetching thousands of layer features, processing separate
           user manageable layers, and rendering them on the client side remained
@@ -79,11 +79,11 @@ export default function Experience() {
             Oracle, and Open Telekom Communications.
           </li>
           <li className="mt-2">
-            Build cloud images that contained the necessary software for
+            Build images that contained the necessary software for
             operating HPC clusters in the cloud using Ansible and Cloud-Init.
           </li>
           <li className="mt-2">
-            Deploy private cloud HPC clusters created from custom cloud images
+            Deploy HPC clusters created using custom built images
             to the cloud using Terraform and Cloud-Init.
           </li>
           <li className="mt-2">

@@ -58,7 +58,7 @@ export default function HeroText() {
       <motion.div
         className="mt-[75px] animate-bounce cursor-pointer"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        animate={{ opacity: 0.4 }}
         transition={{ delay: 0.78, duration: 0.8 }}
         onClick={() => handleArrowClick()}
       >
