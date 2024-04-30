@@ -1,4 +1,4 @@
-export default function Experience() {
+const Experience = () => {
   return (
     <div class="w-full py-5 pb-0 sm:pb-20 mb-[50px] sm:mb-0">
       <div>
@@ -70,8 +70,7 @@ export default function Experience() {
           <li className="mt-2">
             Add and maintain features for an application called On-demand Data
             Center, used for creating, deploying, and managing High Performance
-            Computing clusters in the cloud for supercomputing
-            needs.
+            Computing clusters in the cloud for supercomputing needs.
           </li>
           <li className="mt-2">
             Linux system administration for Debian, Red Hat, SUSE, and other Red
@@ -82,12 +81,12 @@ export default function Experience() {
             Oracle, and Open Telekom Communications.
           </li>
           <li className="mt-2">
-            Build images that contained the necessary software for
-            operating HPC clusters in the cloud using Ansible and Cloud-Init.
+            Build images that contained the necessary software for operating HPC
+            clusters in the cloud using Ansible and Cloud-Init.
           </li>
           <li className="mt-2">
-            Deploy HPC clusters created using custom built images
-            to the cloud using Terraform.
+            Deploy HPC clusters created using custom built images to the cloud
+            using Terraform.
           </li>
           <li className="mt-2">
             Add features to support and enhance running the Extreme-scale
@@ -114,8 +113,8 @@ export default function Experience() {
         <p className="mt-4">
           I configured the server to allow users that exist within the On-demand
           Data Center application to create a VNC session from the application
-          UI by clicking a button. The button sends off a request to a custom API
-          endpoint to create VNC sessions based on unique tokens, allowing
+          UI by clicking a button. The button sends off a request to a custom
+          API endpoint to create VNC sessions based on unique tokens, allowing
           multiple users to use the same VNC service with separate sessions.
           Once the session was created, the application displays a popup window
           with the login screen for the VNC connection, where the user could log
@@ -145,7 +144,9 @@ export default function Experience() {
           <li className="mt-2">
             Push a project built with NodeJS and ReactJS to production.
           </li>
-          <li className="mt-2">Add new features to an existing Django application.</li>
+          <li className="mt-2">
+            Add new features to an existing Django application.
+          </li>
           <li className="mt-2">Scripting and automation of server tasks.</li>
           <li className="mt-2">
             Work with the lead developer and the team to deliver completed
@@ -174,4 +175,6 @@ export default function Experience() {
       </div>
     </div>
   );
-}
+};
+
+export default Experience;

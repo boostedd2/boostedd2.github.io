@@ -1,13 +1,4 @@
-import * as React from "react";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import SkillItem from "./SkillItem";
 
 export default function SkillsCard() {
@@ -42,10 +33,7 @@ export default function SkillsCard() {
                 image={"/images/Linux_Logo_in_Linux_Libertine_Font.svg"}
                 title={"Linux"}
               />
-              <SkillItem
-                image={"/images/Nginx_logo.svg"}
-                title={"NGINX"}
-              />
+              <SkillItem image={"/images/Nginx_logo.svg"} title={"NGINX"} />
               <SkillItem
                 image={"/images/Postgresql_elephant.svg"}
                 title={"PostGreSQL"}
@@ -58,10 +46,7 @@ export default function SkillsCard() {
                 image={"/images/python-logo-only.svg"}
                 title={"Python"}
               />
-              <SkillItem
-                image={"/images/Node.js_logo.svg"}
-                title={"NodeJS"}
-              />
+              <SkillItem image={"/images/Node.js_logo.svg"} title={"NodeJS"} />
             </div>
           </div>
 
@@ -81,14 +66,8 @@ export default function SkillsCard() {
                 image={"/images/Unofficial_JavaScript_logo_2.svg"}
                 title={"JavaScript"}
               />
-              <SkillItem
-                image={"/images/React-icon.svg"}
-                title={"ReactJS"}
-              />
-              <SkillItem
-                image={"/images/Nextjs-logo.svg"}
-                title={"NextJS"}
-              />
+              <SkillItem image={"/images/React-icon.svg"} title={"ReactJS"} />
+              <SkillItem image={"/images/Nextjs-logo.svg"} title={"NextJS"} />
             </div>
           </div>
         </CardContent>
