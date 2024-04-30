@@ -23,6 +23,9 @@ export default function Experience() {
             Build REST APIs and custom CMS solutions with Django.
           </li>
           <li className="mt-2">
+            Integrate 3rd party APIs into existing applications.
+          </li>
+          <li className="mt-2">
             Convert Adobe XD, Adobe PS, and Figma designs into complete frontend
             applications built with React.
           </li>
@@ -67,7 +70,7 @@ export default function Experience() {
           <li className="mt-2">
             Add and maintain features for an application called On-demand Data
             Center, used for creating, deploying, and managing High Performance
-            Computing clusters in the cloud for our customers supercomputing
+            Computing clusters in the cloud for supercomputing
             needs.
           </li>
           <li className="mt-2">
@@ -84,7 +87,7 @@ export default function Experience() {
           </li>
           <li className="mt-2">
             Deploy HPC clusters created using custom built images
-            to the cloud using Terraform and Cloud-Init.
+            to the cloud using Terraform.
           </li>
           <li className="mt-2">
             Add features to support and enhance running the Extreme-scale
@@ -109,15 +112,10 @@ export default function Experience() {
           in Denver, CO as a significant feature of ODDC.
         </p>
         <p className="mt-4">
-          This required me to create the OS configuration and install required
-          software for Ubuntu, Rocky8, and SLES15 by leveraging Ansible from
-          within our nodeJS application.
-        </p>
-        <p className="mt-4">
           I configured the server to allow users that exist within the On-demand
           Data Center application to create a VNC session from the application
-          UI via a button. The button sends off a request to a custom API
-          endpoint to create VNC sessions based on unique tokens to allow
+          UI by clicking a button. The button sends off a request to a custom API
+          endpoint to create VNC sessions based on unique tokens, allowing
           multiple users to use the same VNC service with separate sessions.
           Once the session was created, the application displays a popup window
           with the login screen for the VNC connection, where the user could log
@@ -147,7 +145,7 @@ export default function Experience() {
           <li className="mt-2">
             Push a project built with NodeJS and ReactJS to production.
           </li>
-          <li className="mt-2">Add new features to a Django application.</li>
+          <li className="mt-2">Add new features to an existing Django application.</li>
           <li className="mt-2">Scripting and automation of server tasks.</li>
           <li className="mt-2">
             Work with the lead developer and the team to deliver completed
@@ -172,11 +170,6 @@ export default function Experience() {
           monolithic pages into individual page blocks, giving more control over
           the ordering or layout of content, as well as allow plugins to be
           embedded in the page through the new page sections.
-        </p>
-        <p className="mt-4">
-          Although I already deployed a few of my own personal projects before I
-          got into this role, this was also the first time I was tasked with
-          finishing an application, and deploying the project for production.
         </p>
       </div>
     </div>
