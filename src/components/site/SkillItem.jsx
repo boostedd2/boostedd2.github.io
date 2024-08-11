@@ -12,7 +12,7 @@ export default function SkillItem({ image, title }) {
             alt={title}
           />
         </div>
-        <span className="mt-3 text-2xl font-thin hidden md:block">{title}</span>
+        <span className="mt-3 text-sm md:text-2xl font-thin">{title}</span>
       </CardContent>
     </Card>
   );

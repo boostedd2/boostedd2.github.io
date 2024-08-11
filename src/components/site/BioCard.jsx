@@ -5,28 +5,33 @@ export default function BioCard() {
     <div id="bio-content-wrapper">
       <Card className="xs:w-[100%] mt-[10px] sm:mt-[20px] sm:p-0 md:p-5">
         <CardHeader className="pb-2 sm:pb-6">
-          <CardTitle className="text-3xl text-teal-400">Welcome</CardTitle>
+          <CardTitle className="text-3xl text-teal-400">About Me</CardTitle>
         </CardHeader>
         <CardContent>
           <p className="leading-normal sm:leading-relaxed">
-            I'm Luke, a full-stack software developer located in Bonita Springs,
-            Florida. I have years of professional experience building custom web
-            applications and years of previous experience working in the I.T.
-            field, supporting small businesses. My two favorite programming
-            languages to use are Python and JavaScript, as both of these
-            languages are extremely versatile when it comes to building
-            software.
+            Based in Bonita Springs, Florida. I’m a full-stack software
+            developer with a strong background in I.T. and extensive experience
+            in building custom web applications. My work focuses on utilizing
+            Python and JavaScript to create versatile and robust software
+            solutions.
           </p>
           <p className="leading-normal sm:leading-relaxed mt-4">
-            I possess a wide range of experience in developing software, where
-            I've taken on the tasks of designing software architecture, DevOps
-            implementation, ongoing maintenance of existing systems, scripting,
-            and consulting.
+            Key Skills:
           </p>
+          <ul className="mt-3 pl-[25px] list-disc">
+            <li className="mt-2">Building RESTful APIs using Django and NodeJS</li>
+            <li className="mt-2">Building dynamic frontend applications</li>
+            <li className="mt-2">Creating seamless integrations with 3rd party APIs</li>
+            <li className="mt-2">Software architecture and design</li>
+            <li className="mt-2">DevOps implementation</li>
+            <li className="mt-2">Ongoing system maintenance</li>
+            <li className="mt-2">Scripting and automation</li>
+            <li className="mt-2">Consulting and technical support</li>
+          </ul>
           <p className="leading-normal sm:leading-relaxed mt-4">
-            I really enjoy building software and spend a lot of my time either
-            writing software or studying software architecture, and I strive to
-            create great products and user experiences.
+            I’m passionate about creating great products and user experiences,
+            dedicating much of my time to developing software and continuously
+            improving my knowledge of software architecture.
           </p>
         </CardContent>
       </Card>
