@@ -43,7 +43,7 @@ export default function NavBlocks() {
 
       <Dialog>
         <DialogTrigger asChild>
-          <Card className="hover-text-effect-nolift cursor-pointer h-[150px] sm:h-full">
+          <Card id="contact-card" className="hover-text-effect-nolift cursor-pointer h-[150px] sm:h-full">
             <CardContent className="p-5 flex flex-col items-center justify-center h-full">
               <div className="flex flex-col items-center justify-center h-40">
                 <IconMail size={64} stroke={1.2} />
