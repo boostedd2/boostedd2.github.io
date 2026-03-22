@@ -12,12 +12,13 @@ ul li {
 
 ul li::before {
     position: relative;
-    top: -1px;
-    left: -5px;
+    top: 0px;
+    left: 2px;
     content: "+";
     display: inline-block;
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 700;
+    color: #248035;
     width: 1.2em;
     margin-left: -1.2em;
     opacity: 0.5;
