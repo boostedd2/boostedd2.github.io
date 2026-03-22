@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function SkillItem({ image, title }) {
   return (
-    <Card className="xs:w-[100%] hover-text-effect">
+    <Card className="xs:w-[100%] hover-text-effect border-none shadow-none">
       <CardContent className="p-5 flex flex-col items-center justify-between">
         <div className="flex flex-col items-center justify-center h-[80px] sm:h-[120px] md:h-40">
           <img

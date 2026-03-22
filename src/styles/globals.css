@@ -48,9 +48,8 @@ ul li::before {
 }
 
 .hover-text-effect-nolift:hover {
-    box-shadow: 0 4px 8px rgba(45 212 191 / 0.15);
+    box-shadow: 0 2px 4px rgba(45 212 191 / 0.15);
     color: rgb(45 212 191 / var(--tw-text-opacity));
-    background-color: rgb(241 245 249 / 0.25);
     transition: color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
