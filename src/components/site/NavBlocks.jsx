@@ -16,7 +16,7 @@ export default function NavBlocks() {
     <div className="grid grid-cols-2 gap-2 sm:gap-5 mt-[10px] sm:mt-[20px] w-full">
       <Dialog>
         <DialogTrigger asChild>
-          <Card className="hover-text-effect-nolift cursor-pointer h-[150px] sm:h-full">
+          <Card className="hover-text-effect-nolift cursor-pointer h-[150px] sm:h-full border-none shadow-none">
             <CardContent className="p-5 flex flex-col items-center justify-center h-full">
               <div className="flex flex-col items-center justify-center h-40">
                 <IconTool size={64} stroke={1.2} />
@@ -43,7 +43,7 @@ export default function NavBlocks() {
 
       <Dialog>
         <DialogTrigger asChild>
-          <Card id="contact-card" className="hover-text-effect-nolift cursor-pointer h-[150px] sm:h-full">
+          <Card id="contact-card" className="hover-text-effect-nolift cursor-pointer h-[150px] sm:h-full border-none shadow-none">
             <CardContent className="p-5 flex flex-col items-center justify-center h-full">
               <div className="flex flex-col items-center justify-center h-40">
                 <IconMail size={64} stroke={1.2} />
