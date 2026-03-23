@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { IconTool } from "@tabler/icons-react";
 import { IconMail } from "@tabler/icons-react";
 import { IconX } from "@tabler/icons-react";
+import { IconArticle } from "@tabler/icons-react";
 import {
   Dialog,
   DialogContent,
@@ -13,7 +14,9 @@ import Contact from "../modalContent/Contact";
 
 export default function NavBlocks() {
   return (
-    <div className="grid grid-cols-2 gap-2 sm:gap-5 mt-[10px] sm:mt-[20px] w-full">
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-5 mt-[10px] sm:mt-[20px] w-full">
+
+      {/* EXPERIENCE */}
       <Dialog>
         <DialogTrigger asChild>
           <Card className="hover-text-effect-nolift cursor-pointer h-[150px] sm:h-full border-none shadow-none">
@@ -41,9 +44,13 @@ export default function NavBlocks() {
         </DialogContent>
       </Dialog>
 
+      {/* CONTACT */}
       <Dialog>
         <DialogTrigger asChild>
-          <Card id="contact-card" className="hover-text-effect-nolift cursor-pointer h-[150px] sm:h-full border-none shadow-none">
+          <Card
+            id="contact-card"
+            className="hover-text-effect-nolift cursor-pointer h-[150px] sm:h-full border-none shadow-none"
+          >
             <CardContent className="p-5 flex flex-col items-center justify-center h-full">
               <div className="flex flex-col items-center justify-center h-40">
                 <IconMail size={64} stroke={1.2} />
@@ -55,9 +62,7 @@ export default function NavBlocks() {
           </Card>
         </DialogTrigger>
 
-        <DialogContent
-          className={`w-[90%] sm:w-[100%] md:max-w-[600px] lg:max-w-[800px] h-[320px] md:h-[525px] sm:rounded-none px-10 md:px-20 focus-visible:outline-none`}
-        >
+        <DialogContent className="w-[90%] sm:w-[100%] md:max-w-[600px] lg:max-w-[800px] h-[320px] md:h-[525px] sm:rounded-none px-10 md:px-20 focus-visible:outline-none">
           <div className="flex jusitfy-end">
             <DialogClose asChild>
               <div className="absolute right-[15px] top-[15px] hover:text-teal-400 hover-text-effect-plain cursor-pointer">
@@ -69,6 +74,26 @@ export default function NavBlocks() {
           <Contact />
         </DialogContent>
       </Dialog>
+
+      {/* BLOG */}
+      <a
+        href="https://bytewise-it.com"
+        target="_blank"
+        rel="noopener"
+        className="col-span-2 md:col-span-1"
+      >
+        <Card className="hover-text-effect-nolift cursor-pointer h-[150px] sm:h-full border-none shadow-none">
+          <CardContent className="p-5 flex flex-col items-center justify-center h-full">
+            <div className="flex flex-col items-center justify-center h-40">
+              <IconArticle size={64} stroke={1.2} />
+            </div>
+            <span className="text-2xl font-thin relative top-[-15px] sm:top-[-25px]">
+              Blog
+            </span>
+          </CardContent>
+        </Card>
+      </a>
+
     </div>
   );
 }
