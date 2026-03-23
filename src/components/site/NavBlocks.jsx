@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { IconTool } from "@tabler/icons-react";
 import { IconMail } from "@tabler/icons-react";
 import { IconX } from "@tabler/icons-react";
-import { IconArticle } from "@tabler/icons-react";
+import { IconWorld } from "@tabler/icons-react";
 import {
   Dialog,
   DialogContent,
@@ -85,10 +85,10 @@ export default function NavBlocks() {
         <Card className="hover-text-effect-nolift cursor-pointer h-[150px] sm:h-full border-none shadow-none">
           <CardContent className="p-5 flex flex-col items-center justify-center h-full">
             <div className="flex flex-col items-center justify-center h-40">
-              <IconArticle size={64} stroke={1.2} />
+              <IconWorld size={64} stroke={1.2} />
             </div>
             <span className="text-2xl font-thin relative top-[-15px] sm:top-[-25px]">
-              Blog
+              Bytewise
             </span>
           </CardContent>
         </Card>
