@@ -3,7 +3,44 @@ const Experience = () => {
     <div class="w-full py-5 pb-0 sm:pb-20 mb-[50px] sm:mb-0">
       <div>
         <span className="font-semibold italic text-sm text-slate-500 relative left-[1px] top-[2px]">
-          Doc4 (2021 - present)
+          NextNet (2025 - present)
+        </span>
+        <h5 className="font-medium text-xl">Full-stack Software Developer</h5>
+        <h6 className="font-thin text-sm text-slate-400 relative top-[-2px]">
+          Remote (Full-time)
+        </h6>
+        <hr className="w-full sm:w-[300px] mt-2 opacity-[50%]" />
+
+        <ul className="mt-7 pl-[25px] list-disc">
+          <li className="mt-2">
+            Designed application architecture for our ordering and fulfillment platforms, which unified operations of 6 different brands into a single multi-tenant application, presented across two UIs.</li>
+          <li className="mt-2">
+            Collaborate with the Product Owner and stakeholders to help determine project scope and translate requirements into technical design.</li>
+          <li className="mt-2">
+            Helped manage project timelines, define feature tickets, estimate effort, and assist with sprint planning alongside our Project Manager.
+          </li>
+          <li className="mt-2">
+            Implement high-complexity or core features end-to-end across the entire application stack and related services.</li>
+          <li className="mt-2">Write and maintain project documentation: System Design, Application Architecture, SDLC, Coding Conventions.</li>
+          <li className="mt-2">
+            Led small targeted teams to execute on major company initiatives, promoting strong collaboration and clear communication throughout the groups.
+          </li>
+        </ul>
+
+        <h6 className="text-md text-slate-700 font-semibold mt-[50px]">
+          Highlights:
+        </h6>
+        <p className="mt-1">
+          Designed the architecture of a multi-tenant ordering platform, which unified a catalog of self-service products and managed services across 6 companies. Working closely with the SVP of Engineering and our Product Owner, I led development of our backend and frontend applications.</p>
+        <p className="mt-4">
+          This included taking on management of a third-party UX/UI team to design/build the frontend to our specifications, while I developed the core API and provided documentation. I was also responsible for collaborating with our other team of developers that were tasked with building the fulfillment platform, the ordering platform was upstream to the fulfillment platform, and a lot of careful architectural decisions were made to ensure the two platforms could communicate efficiently.
+        </p>
+
+      </div>
+
+      <div className="mt-[100px] sm:mt-[125px]">
+        <span className="font-semibold italic text-sm text-slate-500 relative left-[1px] top-[2px]">
+          Doc4 (2021 - 2025)
         </span>
         <h5 className="font-medium text-xl">Full-stack Software Developer</h5>
         <h6 className="font-thin text-sm text-slate-400 relative top-[-2px]">
@@ -23,7 +60,7 @@ const Experience = () => {
             Build REST APIs and custom CMS solutions with Django.
           </li>
           <li className="mt-2">
-            Integrate 3rd party APIs into existing applications.
+            Integrate third-party APIs into existing applications.
           </li>
           <li className="mt-2">
             Convert Adobe XD, Adobe PS, and Figma designs into complete frontend
@@ -41,7 +78,7 @@ const Experience = () => {
         <p className="mt-1">
           Created a city permitting application that pulls large sets of data
           from various city hosted ArcGIS API Server instances. The application
-          allows cities to display their self hosted GIS data on a map, and add
+          allows cities to display their self-hosted GIS data on a map, and add
           or edit additional layers. This took several different techniques to
           ensure that fetching thousands of layer features, processing separate
           user manageable layers, and rendering them on the client side remained
@@ -50,15 +87,15 @@ const Experience = () => {
         <p className="mt-4">
           Working together with city management, we created an application that
           helps organize and visualize GIS data into an easy to use platform,
-          where architects can provide high quality building designs, and the
+          where architects can provide high-quality building designs and the
           city can streamline the permitting process for future city
-          development.
+          development using a strategy called pattern zoning.
         </p>
       </div>
 
       <div className="mt-[100px] sm:mt-[125px]">
         <span className="font-semibold italic text-sm text-slate-500 relative left-[1px] top-[2px]">
-          Adaptive Computing Inc. (7/2023 - 4/2024)
+          Adaptive Computing Inc. (2023 - 2024)
         </span>
         <h5 className="font-medium text-xl">Full-stack Software Developer</h5>
         <h6 className="font-thin text-sm text-slate-400 relative top-[-2px]">
@@ -166,7 +203,7 @@ const Experience = () => {
           This was done using the BeautifulSoup Python library. We split up the
           article into blocks based on the content, where each block would be
           defined by a Heading tag and then supporting body elements like
-          Paragraph, Lists, Tables, so on. These blocks were broken down into
+          Paragraph, Lists, Tables, and so on. These blocks were broken down into
           their own objects stored within the database. We converted over 200
           monolithic pages into individual page blocks, giving more control over
           the ordering or layout of content, as well as allow plugins to be
