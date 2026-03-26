@@ -2,14 +2,14 @@ const Experience = () => {
   return (
     <div class="w-full py-5 pb-0 sm:pb-20 mb-[50px] sm:mb-0">
       <div>
-        <span className="font-semibold italic text-sm text-slate-500 relative left-[1px] top-[2px]">
+        <span className="font-semibold italic text-sm text-slate-700 relative left-[1px]">
           NextNet (2025 - present)
         </span>
         <h5 className="font-medium text-xl">Full-stack Software Developer</h5>
-        <h6 className="font-thin text-sm text-slate-400 relative top-[-2px]">
+        <h6 className="font-thin text-sm">
           Remote (Full-time)
         </h6>
-        <hr className="w-full sm:w-[300px] mt-2 opacity-[50%]" />
+        <hr className="w-full sm:w-[300px] mt-2 opacity-[90%]" />
 
         <ul className="mt-7 pl-[25px] list-disc">
           <li className="mt-2">
@@ -39,14 +39,14 @@ const Experience = () => {
       </div>
 
       <div className="mt-[100px] sm:mt-[125px]">
-        <span className="font-semibold italic text-sm text-slate-500 relative left-[1px] top-[2px]">
+        <span className="font-semibold italic text-sm text-slate-700 relative left-[1px]">
           Doc4 (2021 - 2025)
         </span>
         <h5 className="font-medium text-xl">Full-stack Software Developer</h5>
-        <h6 className="font-thin text-sm text-slate-400 relative top-[-2px]">
+        <h6 className="font-thin text-sm">
           Remote (Full-time)
         </h6>
-        <hr className="w-full sm:w-[300px] mt-2 opacity-[50%]" />
+        <hr className="w-full sm:w-[300px] mt-2 opacity-[90%]" />
 
         <ul className="mt-7 pl-[25px] list-disc">
           <li className="mt-2">
@@ -94,14 +94,14 @@ const Experience = () => {
       </div>
 
       <div className="mt-[100px] sm:mt-[125px]">
-        <span className="font-semibold italic text-sm text-slate-500 relative left-[1px] top-[2px]">
+        <span className="font-semibold italic text-sm text-slate-700 relative left-[1px]">
           Adaptive Computing Inc. (2023 - 2024)
         </span>
         <h5 className="font-medium text-xl">Full-stack Software Developer</h5>
-        <h6 className="font-thin text-sm text-slate-400 relative top-[-2px]">
+        <h6 className="font-thin text-sm">
           Remote (Contract)
         </h6>
-        <hr className="w-full sm:w-[300px] mt-2 opacity-[50%]" />
+        <hr className="w-full sm:w-[300px] mt-2 opacity-[90%]" />
 
         <ul className="mt-7 pl-[25px] list-disc">
           <li className="mt-2">
@@ -161,14 +161,14 @@ const Experience = () => {
       </div>
 
       <div className="mt-[100px] sm:mt-[125px]">
-        <span className="font-semibold italic text-sm text-slate-500 relative left-[1px] top-[2px]">
+        <span className="font-semibold italic text-sm text-slate-700 relative left-[1px]">
           Altiview Technology Group (2020 - 2021)
         </span>
         <h5 className="font-medium text-xl">Software Developer</h5>
-        <h6 className="font-thin text-sm text-slate-400 relative top-[-2px]">
+        <h6 className="font-thin text-sm">
           Remote (Contract)
         </h6>
-        <hr className="w-full sm:w-[300px] mt-2 opacity-[50%]" />
+        <hr className="w-full sm:w-[300px] mt-2 opacity-[90%]" />
 
         <ul className="mt-7 pl-[25px] list-disc">
           <li className="mt-2">
