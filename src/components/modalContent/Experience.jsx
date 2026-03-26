@@ -33,7 +33,7 @@ const Experience = () => {
         <p className="mt-1">
           Designed the architecture of a multi-tenant ordering platform, which unified a catalog of self-service products and managed services across 6 companies. Working closely with the SVP of Engineering and our Product Owner, I led development of our backend and frontend applications.</p>
         <p className="mt-4">
-          This included taking on management of a third-party UX/UI team to design/build the frontend to our specifications, while I developed the core API and provided documentation. I was also responsible for collaborating with our other team of developers that were tasked with building the fulfillment platform, the ordering platform was upstream to the fulfillment platform, and a lot of careful architectural decisions were made to ensure the two platforms could communicate efficiently.
+          This included taking on management of a third-party UX/UI team to design/build the frontend to our specifications, while I developed the core API and provided documentation. I was also responsible for collaborating with another internal team of developers that were tasked with building the fulfillment platform, the ordering platform was upstream to the fulfillment platform, and a lot of careful architectural decisions were made to ensure the two platforms could communicate efficiently.
         </p>
 
       </div>

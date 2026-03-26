@@ -6,7 +6,7 @@ export default function SkillsCard() {
     <div className="">
       <Card className="xs:w-[100%] mt-[10px] border-none shadow-none sm:mt-[20px] mb-[50px] sm:p-0 md:p-5">
         <CardHeader className="pb-2 sm:pb-6">
-          <CardTitle className="text-3xl text-teal-400">My Tools</CardTitle>
+          <CardTitle className="text-3xl text-slate-700">My Tools</CardTitle>
         </CardHeader>
         <CardContent>
           <div className="mt-2">

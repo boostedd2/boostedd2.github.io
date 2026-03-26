@@ -5,7 +5,7 @@ export default function BioCard() {
     <div id="bio-content-wrapper">
       <Card className="xs:w-[100%] mt-[10px] sm:mt-[20px] sm:p-0 md:p-5 border-none shadow-none">
         <CardHeader className="pb-2 sm:pb-6">
-          <CardTitle className="text-3xl text-teal-400">About Me</CardTitle>
+          <CardTitle className="text-3xl text-slate-700">About Me</CardTitle>
         </CardHeader>
         <CardContent>
           <p className="leading-normal sm:leading-relaxed">
