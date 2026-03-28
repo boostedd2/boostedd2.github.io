@@ -3,77 +3,128 @@ import { IconSend2 } from "@tabler/icons-react";
 import { Input } from "@/components/ui/input";
 
 const Contact = () => {
+  const turnstileRef = React.useRef(null);
+
   const [formData, setFormData] = React.useState({
     name: "",
     email: "",
     message: "",
+    company_website_field: "",
   });
 
+  const [turnstileToken, setTurnstileToken] = React.useState("");
   const [formSending, setFormSending] = React.useState(false);
   const [formSent, setFormSent] = React.useState(false);
+  const [formError, setFormError] = React.useState("");
+
+  React.useEffect(() => {
+    let widgetId = null;
+
+    const renderTurnstile = () => {
+      if (!window.turnstile || !turnstileRef.current) return;
+
+      // Prevent duplicate render
+      if (turnstileRef.current.childElementCount > 0) return;
+
+      widgetId = window.turnstile.render(turnstileRef.current, {
+        sitekey: "0x4AAAAAACxRC-obP8D6hqgr",
+        callback: (token) => {
+          setTurnstileToken(token);
+        },
+        "expired-callback": () => {
+          setTurnstileToken("");
+        },
+        "error-callback": () => {
+          setTurnstileToken("");
+        },
+      });
+    };
+
+    const interval = setInterval(() => {
+      if (window.turnstile) {
+        renderTurnstile();
+        clearInterval(interval);
+      }
+    }, 200);
+
+    return () => {
+      clearInterval(interval);
+
+      if (window.turnstile && widgetId !== null) {
+        try {
+          window.turnstile.remove(widgetId);
+        } catch (e) {
+          // ignore cleanup issues
+        }
+      }
+    };
+  }, []);
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   };
 
   const handleSubmit = async (event) => {
-    setFormSending(true);
     event.preventDefault();
 
+    setFormSending(true);
+    setFormError("");
+
     try {
-      const response = await fetch(
-        "https://api.bytewise-it.com/contact-us/portfolio",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+      const response = await fetch("https://silent-rice-93d5.boostedd2.workers.dev/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+          turnstileToken,
+        }),
+      });
+
+      const data = await response.json();
 
       if (!response.ok) {
-        throw new Error("Failed to submit form data");
+        throw new Error(data?.error || "Failed to submit form");
       }
 
-      setFormSending(false);
       setFormSent(true);
-
       setFormData({
         name: "",
         email: "",
         message: "",
+        company_website_field: "",
       });
+      setTurnstileToken("");
     } catch (error) {
-      setFormSending(true);
-      setFormSent(false);
+      setFormError(error.message || "Something went wrong. Please try again.");
+    } finally {
+      setFormSending(false);
     }
   };
 
   return (
     <>
-      {formSending || formSent ? null : (
-        <div class="w-full flex items-center">
-          <form onSubmit={handleSubmit} class="w-full">
+      {!formSent && (
+        <div className="w-full flex items-center">
+          <form onSubmit={handleSubmit} className="w-full">
             <input
               type="text"
-              name="firstName"
-              value={formData.firstName}
+              name="company_website_field"
+              value={formData.company_website_field}
               onChange={handleInputChange}
-              style={{ display: "none" }}
-            />
-            <input
-              type="text"
-              name="lastName"
-              value={formData.lastName}
-              onChange={handleInputChange}
+              tabIndex={-1}
+              autoComplete="off"
               style={{ display: "none" }}
             />
 
-            <div class="mb-2 md:mb-4 pt-6 md:pt-4">
+            <div className="mb-2 md:mb-4 pt-6 md:pt-4">
               <Input
-                class="h-[35px] md:h-[35px] md:h-[50px] appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="h-[35px] md:h-[50px] appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 type="text"
                 placeholder="Name"
                 required
@@ -82,9 +133,10 @@ const Contact = () => {
                 onChange={handleInputChange}
               />
             </div>
-            <div class="mb-2 md:mb-4">
+
+            <div className="mb-2 md:mb-4">
               <Input
-                class="h-[35px] md:h-[50px] appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="h-[35px] md:h-[50px] appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 type="email"
                 placeholder="Email Address"
                 required
@@ -93,24 +145,36 @@ const Contact = () => {
                 onChange={handleInputChange}
               />
             </div>
-            <div class="mb-4 md:mb-6">
+
+            <div className="mb-4 md:mb-6">
               <textarea
-                class="h-[80px] md:h-[200px] appearance-none resize-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="h-[80px] md:h-[200px] appearance-none resize-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 placeholder="Message"
                 required
                 name="message"
                 value={formData.message}
                 onChange={handleInputChange}
-              ></textarea>
+              />
             </div>
-            <div class="flex items-center justify-center">
+
+            {formError && (
+              <p className="text-red-500 text-sm text-center mb-4">
+                {formError}
+              </p>
+            )}
+
+            <div className="flex flex-col items-center justify-center gap-3">
               <button
-                class="flex justify-center items-center w-full max-w-[100px] h-[35px] md:h-[45px] bg-white hover:bg-teal-400 text-teal-400 hover:text-white hover-text-effect-plain border border-teal-400 font-bold py-2 px-4 focus:outline-none focus:shadow-outline"
+                className="flex justify-center items-center w-full max-w-[100px] h-[35px] md:h-[45px] bg-white hover:bg-teal-400 text-teal-400 hover:text-white hover-text-effect-plain border border-teal-400 font-bold py-2 px-4 focus:outline-none focus:shadow-outline disabled:opacity-50"
                 type="submit"
+                disabled={formSending || !turnstileToken}
               >
-                <IconSend2 />
+                {formSending ? "..." : <IconSend2 />}
               </button>
-            </div>
+
+              <div className="h-0 overflow-hidden opacity-0 pointer-events-none">
+                <div ref={turnstileRef} />
+              </div>            </div>
           </form>
         </div>
       )}
