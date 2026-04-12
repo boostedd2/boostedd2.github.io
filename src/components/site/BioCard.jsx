@@ -21,10 +21,10 @@ export default function BioCard() {
           <ul className="mt-3 pl-[25px] list-disc">
             <li className="mt-2">Designing scalable application architecture</li>
             <li className="mt-2">Developing modern full-stack web applications</li>
-            <li className="mt-2">Cloud infrastructure and DevOps practices</li>
+            <li className="mt-2">Cloud infrastructure and DevOps tooling</li>
             <li className="mt-2">Automation, scripting, and internal tool development</li>
             <li className="mt-2">Proficiency with Python and JavaScript frameworks</li>
-            <li className="mt-2">Experience leading small, targeted initiatives</li>
+            <li className="mt-2">Experience leading targeted initiatives or MVPs</li>
             <li className="mt-2">Cross-team collaboration</li>
             <li className="mt-2">Writing technical documentation</li>
             <li className="mt-2">Partnering with stakeholders and product teams</li>
