@@ -35,10 +35,13 @@ const Experience = () => {
         <p className="mt-4">
           This included taking on management of a third-party UX/UI team to design/build the frontend to our specifications, while I developed the core API and provided documentation. I was also responsible for collaborating with another internal team of developers that were tasked with building the fulfillment platform, the ordering platform was upstream to the fulfillment platform, and a lot of careful architectural decisions were made to ensure the two platforms could communicate efficiently.
         </p>
-
       </div>
 
-      <div className="mt-[100px] sm:mt-[125px]">
+      <div className="flex justify-center my-[40px] sm:my-[60px]">
+        <span className="text-slate-300 tracking-widest select-none font-semibold text-lg">...</span>
+      </div>
+
+      <div className="mt-[60px] sm:mt-[85px]">
         <span className="font-semibold italic text-sm text-slate-700 relative left-[1px]">
           Doc4 (2021 - 2025)
         </span>
@@ -93,7 +96,12 @@ const Experience = () => {
         </p>
       </div>
 
-      <div className="mt-[100px] sm:mt-[125px]">
+      <div className="flex justify-center my-[40px] sm:my-[60px]">
+        <span className="text-slate-300 tracking-widest select-none font-semibold text-lg">...</span>
+      </div>
+
+
+      <div className="mt-[60px] sm:mt-[85px]">
         <span className="font-semibold italic text-sm text-slate-700 relative left-[1px]">
           Adaptive Computing Inc. (2023 - 2024)
         </span>
@@ -160,7 +168,12 @@ const Experience = () => {
         </p>
       </div>
 
-      <div className="mt-[100px] sm:mt-[125px]">
+      <div className="flex justify-center my-[40px] sm:my-[60px]">
+        <span className="text-slate-300 tracking-widest select-none font-semibold text-lg">...</span>
+      </div>
+
+
+      <div className="mt-[60px] sm:mt-[85px]">
         <span className="font-semibold italic text-sm text-slate-700 relative left-[1px]">
           Altiview Technology Group (2020 - 2021)
         </span>
